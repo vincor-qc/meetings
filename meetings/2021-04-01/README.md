@@ -175,9 +175,9 @@ distances = [int(x) for x in input().split()]
 ```
 
 Next, let us define a function that will compute the distance between two cities `a` and `b`.
-We will use the `distances` array to do this - per the question statement, the _i_\th integer represents the distance between city _i_ and city _i + 1_. Thus, the distance between city _i_ and city _i + n_ would the sum of all integers from the _i_-th integer to the _i + n_-th integer, excluding the last integer in that range.
+We will use the `distances` array to do this - per the question statement, the _i_-th integer represents the distance between city _i_ and city _i + 1_. Thus, the distance between city _i_ and city _i + n_ would the sum of all integers from the _i_-th integer to the _i + n_-th integer, excluding the last integer in that range.
 
-For example, suppose we wanted to compute the distance between cities 1 and 3, given a distance array of `[3, 10, 12, 5]`. We would sum the integers between the 1st position and the 3rd position, resulting in `3 + 10` = `10`.
+For example, suppose we wanted to compute the distance between cities 1 and 3, given a distance array of `[3, 10, 12, 5]`. We would sum the integers between the 1st position and the 3rd position, resulting in `3 + 10` = `13`.
 
 ```python
 def distance(a, b):
