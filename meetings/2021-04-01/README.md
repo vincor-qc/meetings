@@ -17,7 +17,7 @@ Please read the problem statement on your own first.
 
 [pause]
 
-In short, this question asks us to find the longest substring contained in the input string that is a _palindrome_. We then print the length of this substring to standard output. For example, in the string `hello_mom`, we would print `3` as that is the length of `mom`, the only palindrome.
+In short, this question asks us to find the longest substring contained in the input string that is a _palindrome_. We then print the length of this substring to standard output. For example, in the string `hello_mom`, we would print `3` as that is the length of `mom`, the longest palindrome.
 
 **Determining whether a string is a palindrome**<br>
 There are a few ways we can go about solving the problem but they all have one thing in common - we need to know how to determine whether a string is a palindrome. Again, there are a few ways to go about this, but we'll be using the simplest one here.
