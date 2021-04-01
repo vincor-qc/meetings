@@ -1,10 +1,10 @@
-text = input()
-longest_len = 0
-
-
 def is_palindrome(string):
     reversed_string = string[::-1]
     return string == reversed_string
+
+
+text = input()
+longest_len = 0
 
 
 for start_index in range(0, len(text)):

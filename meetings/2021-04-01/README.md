@@ -56,7 +56,7 @@ True
 Cool, looks like it works. Now, let's use this to solve the problem.
 
 **Solution**<br>
-At the start of the code, we will add our function for determining whether a string is a palindrome:
+At the start of the code, let us paste the function we wrote earlier that determines whether a string is a palindrome:
 
 ```python
 def is_palindrome(string):
@@ -119,24 +119,25 @@ And... that's it! Here is the code in its entirety:
 > You can also see the code as a Python file [here](./code/ccc_2016_j3.py).
 
 ```python
-text = input()
-longest_len = 0
-
-
 def is_palindrome(string):
     reversed_string = string[::-1]
     return string == reversed_string
+
+
+text = input()
+longest_len = 0
 
 
 for start_index in range(0, len(text)):
     for end_index in range(len(text), start_index, -1):
         substr = text[start_index:end_index]
         if is_palindrome(substr):
-			substr_len = len(substr)
+            substr_len = len(substr)
             if len(substr) > longest_len:
                 longest_len = substr_len
 
 print(longest_len)
+
 ```
 
 Let's check if it works using DMOJ:
